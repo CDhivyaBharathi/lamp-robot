@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: 7b923fc3f6fac52bd411c9b2 -->
+<mujoco model="C:\Users\Bharathi\Desktop\lamp\lamp-sim">
+  <compiler angle="radian" meshdir="assets" autolimits="true"/>
+  <default>
+    <default class="C:\Users\Bharathi\Desktop\lamp\lamp-sim">
+      <joint frictionloss="0.1" armature="0.005"/>
+      <position kp="50" dampratio="1"/>
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+      </default>
+      <default class="collision">
+        <geom group="3"/>
+      </default>
+    </default>
+  </default>
+  <worldbody>
+    <!-- Link part_2 -->
+    <body name="part_2" pos="0 0 0" quat="1 0 0 0" childclass="C:\Users\Bharathi\Desktop\lamp\lamp-sim">
+      <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+      <!-- Part st3215_hs -->
+      <geom type="mesh" class="visual" pos="-0.0320902 -0.0122937 0.0208167" quat="0.707107 0.707107 -0 -0" mesh="st3215_hs" material="st3215_hs_material"/>
+      <geom type="mesh" class="collision" pos="-0.0320902 -0.0122937 0.0208167" quat="0.707107 0.707107 -0 -0" mesh="st3215_hs" material="st3215_hs_material"/>
+      <!-- Part part_2 -->
+      <geom type="mesh" class="visual" pos="-0.0317199 -0.041241 -0.00178335" quat="1 0 0 0" mesh="part_2" material="part_2_material"/>
+      <geom type="mesh" class="collision" pos="-0.0317199 -0.041241 -0.00178335" quat="1 0 0 0" mesh="part_2" material="part_2_material"/>
+      <!-- Link spur_gear__15_teeth -->
+      <body name="spur_gear__15_teeth" pos="-0.0195907 -0.0122937 0.0377167" quat="0 0.939543 0.34243 -0">
+        <!-- Joint from part_2 to spur_gear__15_teeth -->
+        <joint axis="0 0 1" name="a" type="hinge"/>
+        <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+        <!-- Part spur_gear__15_teeth -->
+        <geom type="mesh" class="visual" pos="0 -0 0" quat="0.707107 0.707107 0 0" mesh="spur_gear__15_teeth" material="spur_gear__15_teeth_material"/>
+        <geom type="mesh" class="collision" pos="0 -0 0" quat="0.707107 0.707107 0 0" mesh="spur_gear__15_teeth" material="spur_gear__15_teeth_material"/>
+      </body>
+      <!-- Link part_2_2 -->
+      <body name="part_2_2" pos="-0.0317199 -0.041241 0.0382167" quat="0 -0.0807425 0.996735 0">
+        <!-- Joint from part_2 to part_2_2 -->
+        <joint axis="0 0 1" name="b" type="hinge" range="-3.1416 3.1416"/>
+        <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+        <!-- Part st3215_hs_2 -->
+        <geom type="mesh" class="visual" pos="-0.000196909 -0 -0.0395722" quat="0.497814 -0.497814 0.502177 0.502177" mesh="st3215_hs" material="st3215_hs_material"/>
+        <geom type="mesh" class="collision" pos="-0.000196909 -0 -0.0395722" quat="0.497814 -0.497814 0.502177 0.502177" mesh="st3215_hs" material="st3215_hs_material"/>
+        <!-- Part part_2_2 -->
+        <geom type="mesh" class="visual" pos="0 -0 -0.015" quat="0.707107 -0.707107 -0 0" mesh="part_2__2" material="part_2__2_material"/>
+        <geom type="mesh" class="collision" pos="0 -0 -0.015" quat="0.707107 -0.707107 -0 0" mesh="part_2__2" material="part_2__2_material"/>
+        <!-- Link arm_part1 -->
+        <body name="arm_part1" pos="-0.0193053 -0 -0.0519055" quat="0.704015 -0 0.710185 0">
+          <!-- Joint from part_2_2 to arm_part1 -->
+          <joint axis="0 0 1" name="c" type="hinge" range="-1.4358 1.0385"/>
+          <inertial pos="0.0609516 0.000415301 0.0185951" mass="0.138375" fullinertia="3.10282e-05 0.000133674 0.000121937 -6.99386e-07 1.12511e-06 7.66e-09"/>
+          <!-- Part st3215_hs_3 -->
+          <geom type="mesh" class="visual" pos="0.124524 0.000848453 0.0178494" quat="0.707055 -0.707097 0.00376173 0.00857938" mesh="st3215_hs" material="st3215_hs_material"/>
+          <geom type="mesh" class="collision" pos="0.124524 0.000848453 0.0178494" quat="0.707055 -0.707097 0.00376173 0.00857938" mesh="st3215_hs" material="st3215_hs_material"/>
+          <!-- Part arm_part1 -->
+          <geom type="mesh" class="visual" pos="-0.0124992 -8.51641e-05 0.0192" quat="0.00240891 -0.707103 -0.00240891 -0.707103" mesh="arm_part1" material="arm_part1_material"/>
+          <geom type="mesh" class="collision" pos="-0.0124992 -8.51641e-05 0.0192" quat="0.00240891 -0.707103 -0.00240891 -0.707103" mesh="arm_part1" material="arm_part1_material"/>
+          <!-- Link part_2_3 -->
+          <body name="part_2_3" pos="0.137333 0.000935726 0.0354785" quat="0.00618136 -0.701001 -0.713106 0.00615981">
+            <!-- Joint from arm_part1 to part_2_3 -->
+            <joint axis="0 0 1" name="d" type="hinge" range="-1.7825 1.4926"/>
+            <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
+            <!-- Part part_2_3 -->
+            <geom type="mesh" class="visual" pos="-0 -0.0124995 0.0192" quat="0.5 -0.5 -0.5 -0.5" mesh="part_2__3" material="part_2__3_material"/>
+            <geom type="mesh" class="collision" pos="-0 -0.0124995 0.0192" quat="0.5 -0.5 -0.5 -0.5" mesh="part_2__3" material="part_2__3_material"/>
+            <!-- Part st3215_hs_4 -->
+            <geom type="mesh" class="visual" pos="0 0.0855317 0.0185414" quat="0.5 0.5 0.5 0.5" mesh="st3215_hs" material="st3215_hs_material"/>
+            <geom type="mesh" class="collision" pos="0 0.0855317 0.0185414" quat="0.5 0.5 0.5 0.5" mesh="st3215_hs" material="st3215_hs_material"/>
+            <!-- Link arn_part2 -->
+            <body name="arn_part2" pos="-0 0.0980312 0.0377414" quat="0 -0.013884 0.999904 0">
+              <!-- Joint from part_2_3 to arn_part2 -->
+              <joint axis="0 0 1" name="f" type="hinge" range="-1.4895 1.4864"/>
+              <inertial pos="0.00204424 0.0321207 0.0181236" mass="0.0424431" fullinertia="1.68563e-05 1.0444e-05 1.13344e-05 -7.27975e-07 -5.175e-08 -2.6913e-08"/>
+              <!-- Part arn_part2 -->
+              <geom type="mesh" class="visual" pos="-0 -0.0124995 0.0192" quat="0.5 -0.5 -0.5 -0.5" mesh="arn_part2" material="arn_part2_material"/>
+              <geom type="mesh" class="collision" pos="-0 -0.0124995 0.0192" quat="0.5 -0.5 -0.5 -0.5" mesh="arn_part2" material="arn_part2_material"/>
+              <!-- Part st3215_hs_5 -->
+              <geom type="mesh" class="visual" pos="-0.0192902 0.0402994 0.0187392" quat="0 -0 0.00436331 0.99999" mesh="st3215_hs" material="st3215_hs_material"/>
+              <geom type="mesh" class="collision" pos="-0.0192902 0.0402994 0.0187392" quat="0 -0 0.00436331 0.99999" mesh="st3215_hs" material="st3215_hs_material"/>
+              <!-- Link lamp_head -->
+              <body name="lamp_head" pos="-0.0317897 0.0581488 0.0185835" quat="0 0 0.710185 0.704015">
+                <!-- Joint from arn_part2 to lamp_head -->
+                <joint axis="0 0 1" name="e" type="hinge" range="-1.4021 1.3821"/>
+                <inertial pos="0.0424633 -0.0116019 -0.0184436" mass="0.0517387" fullinertia="5.71725e-05 5.34173e-05 5.17102e-05 -1.40293e-06 1.77858e-07 -4.6262e-08"/>
+                <!-- Part lamp_head -->
+                <geom type="mesh" class="visual" pos="-0.0119865 0.00354434 -0.01805" quat="0.101298 0.699813 -0.101298 0.699813" mesh="lamp_head" material="lamp_head_material"/>
+                <geom type="mesh" class="collision" pos="-0.0119865 0.00354434 -0.01805" quat="0.101298 0.699813 -0.101298 0.699813" mesh="lamp_head" material="lamp_head_material"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <asset>
+    <mesh file="part_2__3.stl"/>
+    <mesh file="arn_part2.stl"/>
+    <mesh file="lamp_head.stl"/>
+    <mesh file="spur_gear__15_teeth.stl"/>
+    <mesh file="part_2__2.stl"/>
+    <mesh file="st3215_hs.stl"/>
+    <mesh file="arm_part1.stl"/>
+    <mesh file="part_2.stl"/>
+    <material name="st3215_hs_material" rgba="0.792157 0.819608 0.933333 1"/>
+    <material name="part_2_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="spur_gear__15_teeth_material" rgba="0.647059 0.647059 0.647059 1"/>
+    <material name="part_2__2_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="arm_part1_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="part_2__3_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="arn_part2_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="lamp_head_material" rgba="0.231373 0.380392 0.705882 1"/>
+  </asset>
+  <actuator>
+    <position class="C:\Users\Bharathi\Desktop\lamp\lamp-sim" name="a" joint="a"/>
+    <position class="C:\Users\Bharathi\Desktop\lamp\lamp-sim" name="c" joint="c"/>
+    <position class="C:\Users\Bharathi\Desktop\lamp\lamp-sim" name="d" joint="d"/>
+    <position class="C:\Users\Bharathi\Desktop\lamp\lamp-sim" name="f" joint="f"/>
+    <position class="C:\Users\Bharathi\Desktop\lamp\lamp-sim" name="e" joint="e"/>
+  </actuator>
+  <equality>
+    <joint joint1="b" joint2="a" polycoef="0 0.25 0 0 0"/>
+  </equality>
+</mujoco>
